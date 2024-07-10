@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: #8b4513;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mole {
+  width: 80px;
+  height: 80px;
+  background-color: #daa520;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  transition: top 0.3s;
+}
+
+.mole.up {
+  top: 20%;
+}
